@@ -1,0 +1,3 @@
+com.smaato.sdk.iahb.IahbModuleInterface
+com.smaato.sdk.nativead.injections.NativeModuleInterface
+com.smaato.sdk.core.injections.CoreLightModuleInterface

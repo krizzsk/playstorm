@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Set;
+
+/* compiled from: com.google.android.gms:play-services-ads@@21.0.0 */
+public final class zzenz implements zzgpu {
+    private final zzgqh zza;
+
+    public zzenz(zzgqh zzgqh) {
+        this.zza = zzgqh;
+    }
+
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzeny((Set) this.zza.zzb());
+    }
+}

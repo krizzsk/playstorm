@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:pangle="http://schemas.android.com/apk/com.bytedance.sdk.component" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tt_full_reward_video_landing_loading" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/tt_loading_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/wave_container" android:layout_width="match_parent" android:layout_height="60dp">
+            <View android:id="@+id/wave1" android:background="@drawable/tt_ad_landing_loading_three_left" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginRight="-1.5dp"/>
+            <View android:id="@+id/wave2" android:background="@drawable/tt_ad_landing_loading_three_mid" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginRight="-1.5dp"/>
+            <View android:id="@+id/wave3" android:background="@drawable/tt_ad_landing_loading_three_mid" android:layout_width="17dp" android:layout_height="35dp"/>
+            <View android:id="@+id/wave4" android:background="@drawable/tt_ad_landing_loading_three_mid" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginLeft="-1.5dp"/>
+            <View android:id="@+id/wave5" android:background="@drawable/tt_ad_landing_loading_three_right" android:layout_width="17dp" android:layout_height="35dp" android:layout_marginLeft="-1.5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="14dp" android:textColor="#80161823" android:gravity="center" android:layout_gravity="center" android:id="@+id/tt_loading_tip" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_loading_language"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tt_back_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="68dp" android:layout_alignParentTop="true">
+        <com.bytedance.sdk.openadsdk.core.widget.TTRoundRectImageView android:layout_gravity="center" android:id="@+id/tt_back_container_icon" android:layout_width="80dp" android:layout_height="80dp"/>
+        <TextView android:textSize="24dp" android:textColor="#161823" android:layout_gravity="center" android:id="@+id/tt_back_container_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="部落战争：皇室冲突"/>
+        <TextView android:textSize="16dp" android:textColor="#80161823" android:gravity="center" android:layout_gravity="center" android:id="@+id/tt_back_container_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="8dp" android:layout_marginRight="60dp" android:text="部落战争：皇室冲突" android:textAlignment="center"/>
+        <TextView android:textColor="@color/tt_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tt_back_container_download" android:background="@drawable/tt_reward_video_download_btn_bg" android:layout_width="255dp" android:layout_height="44dp" android:layout_marginTop="32dp" android:text="@string/tt_video_mobile_go_detail"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tt_ad_loading_logo" android:background="@drawable/tt_ad_logo_new" android:layout_width="32dp" android:layout_height="14dp" android:layout_marginLeft="20dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_marginStart="20dp"/>
+</RelativeLayout>

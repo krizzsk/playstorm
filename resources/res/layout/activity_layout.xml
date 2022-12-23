@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.saypromo.webplayer.WebPlayer android:id="@+id/webView" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:gravity="center" android:id="@+id/videoViewLayout" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/videoPlayerLayout" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.saypromo.video.VideoPlayerView android:id="@+id/videoPlayerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <View android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/progressView" android:background="@android:color/holo_green_dark" android:layout_width="1dp" android:layout_height="6dp"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="left" android:id="@+id/countdownLeftRelativeLayout" android:paddingLeft="9dp" android:paddingTop="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0">
+            <View android:id="@+id/countdownLeftView" android:background="@drawable/shape" android:layout_width="72dp" android:layout_height="33dp"/>
+            <TextView android:textSize="20sp" android:textColor="#cc4d4d4d" android:layout_gravity="start" android:id="@+id/countdownLeftTextView" android:layout_width="40dp" android:layout_height="38dp" android:layout_marginLeft="37dp" android:layout_marginTop="3dp" android:textAlignment="textStart" android:layout_marginStart="37dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="right" android:id="@+id/countdownRightRelativeLayout" android:paddingLeft="9dp" android:paddingTop="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0">
+            <View android:id="@+id/countdownRightView" android:background="@drawable/shape" android:layout_width="72dp" android:layout_height="33dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="20sp" android:textColor="#cc4d4d4d" android:layout_gravity="end" android:id="@+id/countdownRightTextView" android:layout_width="40dp" android:layout_height="34dp" android:layout_marginTop="3dp" android:layout_marginRight="37dp" android:layout_alignParentRight="true" android:textAlignment="textEnd" android:layout_marginEnd="37dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="left" android:id="@+id/bckBtnImageView" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:scaleType="center" android:adjustViewBounds="false" android:onClick="closeBtnClicked"/>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/logoImageView" android:paddingLeft="12dp" android:paddingTop="15dp" android:paddingRight="12dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/say" android:adjustViewBounds="true"/>
+    </FrameLayout>
+</LinearLayout>
